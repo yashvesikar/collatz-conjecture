@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov  7 19:46:33 2016
-
 @author: yashvesikar
 """
 #This is a project in an attempt to demonstrate the Collatz Conjecture
@@ -59,15 +57,6 @@ steps = [k for k,v in D.items()]
 value = [v for k,v in D.items()]
 key_value = [(k,v) for k,v in D.items()]
 key_value = sorted(key_value)
-
-#for i in key_value[-10:]:
-##    print(i)    
-#    for k,v in steps,value:
-#        print('{}    {}'.format(k,v))
-
-#for k,v in D.items():
-#    for i in range(10):
-#        print('{}    {}'.format(k,v))
 
 draw_plot(steps,value,'Collatz Representation','Step','Values')
 print(maximum(D))
